@@ -1,0 +1,56 @@
+@import "https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600&display=swap";
+:root {
+  --color-green: #06c167;
+  --color-grey: rgb(238, 238, 238);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.container {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+header .nav-brand h1 {
+  font-weight: 300;
+}
+header .nav-brand h1 span {
+  color: var(--color-green);
+  font-weight: 600;
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+header .searchBar {
+  margin-left: auto;
+}
+header .header-option {
+  padding-left: 5rem;
+  letter-spacing: 0.6px;
+}
+header .currentDetails,
+header .searchBar {
+  display: flex;
+}
+.options {
+  padding: 1.2rem 0;
+}
+.options .options-btn {
+  background: var(--color-grey);
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  border: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.6px;
+}
+.options .options-btn.selected {
+  background: #000;
+  color: white;
+}
+/*# sourceMappingURL=index.951c4188.css.map */

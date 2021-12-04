@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600&display=swap');
+
+:root {
+    --color-green: #06c167;
+    --color-grey: rgb(238, 238, 238);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Fira Sans Condensed',
+    sans-serif;
+}
+
+.container {
+    width: calc(100% - 120px);
+    margin: auto;
+}
+
+header {
+
+    .nav-brand {
+        h1{
+            font-weight: 300;
+            span{
+                color: var(--color-green) ;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;   
+    }
+
+    .searchBar {
+        margin-left: auto;
+    }
+
+    .header-option {
+        padding-left: 5rem;
+        letter-spacing: .6px;
+    }
+
+    .currentDetails,
+    .searchBar {
+        display: flex;
+    }
+}
+
+.options {
+
+    padding: 1.2rem 0;
+
+    .options-btn {
+
+        background: var(--color-grey);
+        padding: .6rem 1rem;
+        border-radius: 25px;
+        border: none;
+        font-size: .9rem;
+        letter-spacing: .6px;
+
+        &.selected {
+            background: #000;
+            color: white;
+        }
+    }
+}
